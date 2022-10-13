@@ -1,1 +1,100 @@
+/* A style for index.html */
+@font-face {
+  font-family: 'MyFairFont'; /*to use later*/
+  src: url("RobotoSlab-Black.woff"); /*URL to the font*/
+}
 
+body {
+  background-color: rgb(204, 226, 234);
+}
+  
+  h1 {
+    color:rgb(134, 43, 92);
+    margin-left: 5in;
+    position: relative;
+  }
+  #NoteTitle {
+    font-family: MyFairFont;
+    color: hsl(90,40%,40%);
+    margin: 1em;
+  }
+
+  .ugly{
+    color: #fd9283;
+    background-color: blue;
+    font-size: 1em;
+    width: 100px;
+    padding-left: 5ch;
+    margin-top: 20mm;
+    
+  }
+  
+  main > section > nav{
+    max-width: 3.55cm;
+    min-width: none;
+    font-family: MyFairFont;
+  }
+
+  a[href="https://overwatch.blizzard.com/en-us/"]{
+    color:rgb(93, 35, 93);
+    text-decoration:underline;
+    margin:auto;
+    position: static;
+  }
+
+  h2 ~ li{
+    color: red;
+    display: flex;
+  }
+  
+  h2 + p{
+    font-size: 6mm;
+  }
+
+  p:hover {
+    background-color: yellow;
+  }
+  
+  p,
+  ol{
+    text-align:center;
+  }
+
+  ul {
+    border: 2px solid rebeccapurple;
+    display: inline-block;
+    padding: left;
+    border-style: dashed;
+    list-style: none;
+    font-size: 2.4ch;
+  }
+  
+  body.main.section.h4 {
+    display: none;
+  }
+  hr + section {
+    display: grid;
+  }
+  video {
+    height: 10cm;
+  }
+  h5:active{
+    color:green;
+    font-size:large;
+  }
+  section h2{
+    width:auto;
+    height:2cm;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+  *{
+    border-color: black;
+    border-width: 0.1mm;
+    border-radius: 2.3vmin;
+  }
